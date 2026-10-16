@@ -54,3 +54,7 @@ body{background:#091e20;isolation:isolate}.science-space{position:fixed;inset:0;
  .hero .eyebrow{letter-spacing:1px;font-size:8px}
  .hero .lab-art{width:85%;margin-top:20px}
 }
+
+.teaching-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.teaching-grid .sample-card:last-child:nth-child(odd){grid-column:auto}.teaching-grid .sample-card h3{font-size:24px}.teaching-grid .sample-actions{gap:16px}.teaching-grid .sample-card{padding:26px}
+@media(min-width:901px) and (max-width:1250px){.site-header nav{gap:11px}.site-header nav a{font-size:10px}.site-header .nav-contact{padding:8px}.nav-contact span{margin-left:8px}}
+@media(max-width:1000px){.teaching-grid{grid-template-columns:1fr}.teaching-grid .sample-card{padding:28px}}
