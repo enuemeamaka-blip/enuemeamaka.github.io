@@ -35,3 +35,22 @@ body{background:#091e20;isolation:isolate}.science-space{position:fixed;inset:0;
 .science-space:after{content:'';position:absolute;inset:0;background:#06191b38;pointer-events:none}.science-space .space-equipment{opacity:.12}.science-space .stars-near{opacity:.32}.science-space .stars-far{opacity:.2}.space-nebula{opacity:.55}.section{background:rgba(8,27,29,.58);--muted:#d0dbd5}.research-section,.awards-section{background:rgba(12,34,33,.65)}.projects-section{background:rgba(8,27,29,.68)}.cv-section{background:rgba(24,53,44,.9)}.contact-section{background:rgba(12,35,31,.8)}.section .sample-card{background:rgba(15,40,39,.96)}.section h3{color:#f0f4ec}.section .eyebrow,.section .small-label,.section .pub-type,.section .timeline-date,.section .education>div>span,.section .organization,.section .journal{color:#c5d7b9}.section .sample-meta,.section .dissertation-meta,.section figcaption{color:#cddad2}.section .research-figure figcaption{color:#526156}.hero{background:linear-gradient(90deg,rgba(7,26,29,.7),rgba(7,26,29,.12))}.hero-description,.hero-location{color:#d0dcd5}
 
 .linkedin-link{display:inline-flex;align-items:center;gap:10px;color:#e0ecd8;font-size:12px;letter-spacing:.4px}.linkedin-link svg{flex-shrink:0}.linkedin-link:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}.portrait figcaption span{line-height:1.6;max-width:290px}
+
+/* Stack the home introduction before its illustration on narrow screens. */
+@media(max-width:1000px){
+ .hero{grid-template-columns:minmax(0,1fr);align-items:start;padding-top:45px}
+ .hero-content{width:100%;min-width:0;padding-bottom:20px}
+ .hero h1{font-size:clamp(62px,10vw,88px);letter-spacing:-3px;line-height:1.08;overflow-wrap:normal}
+ .hero .degree{display:inline-block;white-space:nowrap;font-size:clamp(17px,2.8vw,23px);letter-spacing:-.5px}
+ .hero-description{max-width:520px}
+ .hero .lab-art{position:relative;grid-column:1;width:min(82%,420px);max-width:420px;margin:25px auto 40px;justify-self:center;align-self:start}
+ .hero-bottom{grid-column:1;width:100%}
+ .hero .label-bottom{left:16%;right:10%;text-align:center;line-height:1.7}
+}
+@media(max-width:400px){
+ .hero h1{font-size:clamp(50px,15vw,60px);letter-spacing:-2px}
+ .hero .degree{font-size:16px;margin-left:4px}
+ .hero .actions{flex-wrap:wrap;gap:18px}
+ .hero .eyebrow{letter-spacing:1px;font-size:8px}
+ .hero .lab-art{width:85%;margin-top:20px}
+}
