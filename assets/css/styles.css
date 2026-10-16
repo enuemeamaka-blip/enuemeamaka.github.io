@@ -58,3 +58,6 @@ body{background:#091e20;isolation:isolate}.science-space{position:fixed;inset:0;
 .teaching-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.teaching-grid .sample-card:last-child:nth-child(odd){grid-column:auto}.teaching-grid .sample-card h3{font-size:24px}.teaching-grid .sample-actions{gap:16px}.teaching-grid .sample-card{padding:26px}
 @media(min-width:901px) and (max-width:1250px){.site-header nav{gap:11px}.site-header nav a{font-size:10px}.site-header .nav-contact{padding:8px}.nav-contact span{margin-left:8px}}
 @media(max-width:1000px){.teaching-grid{grid-template-columns:1fr}.teaching-grid .sample-card{padding:28px}}
+
+.leadership-sample{margin-top:45px;max-width:760px}.conference-feature{display:grid;grid-template-columns:minmax(230px,.7fr) 1fr;align-items:center;gap:45px;margin-top:55px;padding-top:45px;border-top:1px solid var(--line)}.conference-feature figure{max-width:360px}.conference-feature img{width:100%;height:auto;border-radius:2px}.conference-feature h3{font-family:var(--serif);font-size:34px}.conference-feature .eyebrow{margin-bottom:18px}
+@media(max-width:600px){.conference-feature{grid-template-columns:1fr;gap:25px}.conference-feature figure{max-width:100%}.conference-feature img{max-height:500px;object-fit:contain;object-position:left}}
